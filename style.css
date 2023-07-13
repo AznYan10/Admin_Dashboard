@@ -1,3 +1,8 @@
+::placeholder {
+    color: rgba(0, 0, 0, 0.219);
+    opacity: 0.7; 
+  }
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -7,10 +12,75 @@
 .header {
     background-color: white;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header > form {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1 / 2;
+}
+
+#form {
+    margin-top: 30px;
+}
+
+#form > input {
+    all: unset;
+    font: 16px system-ui;
+    background-color: rgba(0, 78, 114, 0.11);
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+#form > button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+#form > button > svg {
+    color: black;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.head2 {
+    margin-top: 30px;
+    grid-column: 2 / 3;
+}
+
+.head2 > button {
+    color: black;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.head2 > .btn1 {
+    margin-right: 20px;
+}
+
+.head2 > #name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 .sidebar {
-    background-color: rgb(0, 138, 184);
+    background-color: rgb(0, 110, 184);
     color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -34,12 +104,12 @@
 }
 
 .main-content {
-    background-color: rgb(219, 219, 219);
+    background-color: rgba(0, 78, 114, 0.11);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
 #dashboard {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin: 30px 0 30px 30px;
 }
