@@ -9,76 +9,6 @@
     grid-template-rows: 1fr 6fr;
 }
 
-.header {
-    background-color: white;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr;
-}
-
-.header > form {
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-column: 1 / 2;
-}
-
-#form {
-    margin-top: 30px;
-}
-
-#form > input {
-    all: unset;
-    font: 16px system-ui;
-    background-color: rgba(0, 78, 114, 0.11);
-    color: black;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-    border-radius: 20px;
-}
-
-#form > button {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-}
-
-#form > button > svg {
-    color: black;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-}
-
-.head2 {
-    margin-top: 30px;
-    grid-column: 2 / 3;
-}
-
-.head2 > button {
-    color: black;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-}
-
-.head2 > .btn1 {
-    margin-right: 20px;
-}
-
-.head2 > #name {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
 .sidebar {
     background-color: rgb(0, 110, 184);
     color: white;
@@ -101,6 +31,101 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.header > form {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1 / 4;
+}
+
+#form {
+    margin: 30px 0 0 40px;
+}
+
+#form > input {
+    all: unset;
+    font: 16px system-ui;
+    background-color: rgba(0, 78, 114, 0.11);
+    color: black;
+    height: 100%;
+    width: 85%;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+#form > button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+#form > button > svg {
+    color: black;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.head2 {
+    margin-top: 30px;
+    grid-column: 4 / 5;
+}
+
+.head2 > button {
+    color: black;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.head2 > .btn1 {
+    margin-right: 20px;
+}
+
+.head2 > #name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.bottomHead1 {
+    grid-column: 1 / 3;
+    margin: 40px 0 0 40px;
+}
+
+.bottomHead1 > span, .bottomHead1 > p {
+    font-weight: bold;
+}
+
+.bottomHead2 {
+    margin: 40px 0 0 200px;
+    grid-column: 3 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 30px;
+    width: 300px;
+    gap: 20px;
+}
+
+.bottomHead2 > button {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(0, 110, 184);
 }
 
 .main-content {
