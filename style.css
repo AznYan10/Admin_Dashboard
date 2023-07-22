@@ -5,26 +5,41 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 2fr 2fr;
 }
 
 .sidebar {
-    background-color: rgb(0, 110, 185);
+    background-color: #0ea5e9;
     color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 }
 
+#dashboard {
+    width: 50px;
+}
+
+.dash-img {
+    width: 30px;
+}
+
 .sidebar > ul {
     list-style: none;
+    gap: 30px;
 }
 
 .topDash {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+
+.topDash > button {
+    background-color: black;
+    color: white;
 }
 
 .bottomDash {
@@ -42,7 +57,7 @@
 }
 
 .header > form {
-    width: 80%;
+    width: 100%;
     height: 30%;
     display: flex;
     flex-direction: row;
@@ -60,7 +75,7 @@
     background-color: rgba(0, 78, 114, 0.11);
     color: black;
     height: 100%;
-    width: 85%;
+    width: 100%;
     padding: 6px 10px;
     border-radius: 20px;
 }
@@ -82,6 +97,7 @@
 
 .head2 {
     margin-top: 30px;
+    margin-left: -180px;
     grid-column: 4 / 5;
 }
 
@@ -113,7 +129,7 @@
 }
 
 .bottomHead2 {
-    margin: 40px 0 0 200px;
+    margin: 30px 0 0px 0px;
     grid-column: 3 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -125,7 +141,7 @@
 .bottomHead2 > button {
     border-radius: 20px;
     color: white;
-    background-color: rgb(0, 110, 185);
+    background-color: #0ea5e9;
 }
 
 .main-content {
@@ -151,27 +167,54 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    margin-left: 10px;
     gap: 25px;
     height: 700px;
 }
 
 .card-container > div {
-    margin: 0 20px;
     border-left: solid;
     border-width: 10px;
-    border-color: rgb(210, 175, 0);
+    border-color: #dc2626;
     background-color: white;
     border-radius: 10px;
 }
 
-.main-content > .main2 {
+.main2 {
+    margin-left: 20px;
+    width: 90%;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.main-content > .main3 {
+.main2 > h2 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.announce-container {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main3 {
+    margin-left: 20px;
+    width: 90%;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.main3 > h2 {
+    font-size: 30px;
+    margin-top: -60px;
+}
+
+.trending-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #dashboard {
