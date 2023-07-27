@@ -17,11 +17,26 @@
 }
 
 #dashboard {
-    width: 50px;
+    font-size: 25px;
+    margin: 30px 0 30px 30px;
+    background-color: inherit;
+    border: none;
+    width: 60px;
+    cursor: pointer;
 }
 
-.dash-img {
-    width: 30px;
+#dash-text {
+    position: absolute;
+    font-size: 25px;
+    top: 55px;
+    left: 100px;
+}
+
+.dash-btn {
+    width: 40px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
 }
 
 .sidebar > ul {
@@ -62,10 +77,6 @@
 
 .account-img {
     width: 50px;
-}
-
-#notification {
-    width: 25px;
 }
 
 #form {
@@ -116,10 +127,50 @@
     margin-right: 20px;
 }
 
+.head2 > .account-img {
+    position: relative;
+    top: -10px;
+    left: 25px;
+}
+
+
+.head2 > #notification {
+    position: relative;
+    top: -25px;
+    width: 25px;
+}
+
+.head2 > .account-img {
+    position: relative;
+}
+
 .head2 > #name {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 20px;
+    position: relative;
+    left: 45px;
+    top: -25px;
+}
+
+.head2 > #name {
+    position: relative;
+}
+
+.bottomHead1 > .account-img {
+    position: relative;
+    top: 25px;
+}
+
+.bottomHead1 > span {
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+.bottomHead1 > p {
+    position: relative;
+    top: -15px;
+    left: 65px;
 }
 
 .bottomHead1 {
@@ -139,12 +190,18 @@
     height: 30px;
     width: 300px;
     gap: 20px;
+    position: relative;
+    left: 265px;
+    top: 30px;
 }
 
 .bottomHead2 > button {
+    border: none;
     border-radius: 20px;
     color: white;
     background-color: #0ea5e9;
+    cursor: pointer;
+    height: 40px;
 }
 
 .main-content {
@@ -172,7 +229,7 @@
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
     margin-left: 10px;
     gap: 25px;
-    height: 700px;
+    height: 835px;
 }
 
 .card-container > div {
@@ -181,6 +238,7 @@
     border-color: #dc2626;
     background-color: white;
     border-radius: 10px;
+    padding-left: 10px;
 }
 
 .main2 {
@@ -216,11 +274,20 @@
 
 .trending-container {
     background-color: white;
-    padding: 10px;
+    padding: 10px 0 0 20px;
     border-radius: 10px;
+    border-bottom: solid;
+    border-color: #dc2626;
+    border-width: 20px;
 }
 
-#dashboard {
-    font-size: 25px;
-    margin: 30px 0 30px 30px;
+.trending-container > div > span {
+    position: relative;
+    top: -30px;
+}
+
+.trending-container > div > p {
+    position: relative;
+    left: 55px;
+    top: -40px;
 }
